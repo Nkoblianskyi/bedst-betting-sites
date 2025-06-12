@@ -173,7 +173,7 @@ export default function CookiePolicy() {
                 Ved at fortsætte med at bruge vores hjemmeside accepterer du brugen af cookies i overensstemmelse med
                 denne politik.
               </p>
-              <p className="text-gray-300">Denne politik blev sidst opdateret: Januar 2025</p>
+              <p className="text-gray-300">Denne politik blev sidst opdateret: 2025</p>
             </div>
           </div>
         </div>

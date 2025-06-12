@@ -300,7 +300,7 @@ export default function PrivacyPolicy() {
                 denne privatlivspolitik.
               </p>
               <p className="text-gray-300">
-                <strong>Sidst opdateret:</strong> Januar 2025
+                <strong>Sidst opdateret:</strong> 2025
               </p>
             </div>
           </div>
