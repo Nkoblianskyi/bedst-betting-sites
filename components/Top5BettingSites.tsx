@@ -8,7 +8,13 @@ export default function Top5BettingSites() {
       <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
         <div className="grid gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
           {bettingSites.map((site, index) => (
-            <div key={site.id} className="betting-card p-3 sm:p-4 md:p-6 lg:p-8 relative hover-lift">
+            <a
+              key={site.id}
+              href={site.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="betting-card p-3 sm:p-4 md:p-6 lg:p-8 relative hover-lift block group cursor-pointer"
+            >
               <div className="absolute top-2 sm:top-3 md:top-4 lg:top-6 right-2 sm:right-3 md:right-4 lg:right-6 bg-gradient-to-r from-[#dc2626] to-[#fbbf24] text-black rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 flex items-center justify-center font-bold text-sm sm:text-base md:text-lg lg:text-xl shadow-lg z-10">
                 #{index + 1}
               </div>
@@ -20,9 +26,9 @@ export default function Top5BettingSites() {
                     alt={`${site.name} logo`}
                     width={120}
                     height={60}
-                    className="mx-auto mb-2 md:mb-4 filter brightness-110 hover:brightness-125 transition-all duration-300 max-w-[100px] sm:max-w-[120px] h-auto"
+                    className="mx-auto mb-2 md:mb-4 filter brightness-110 transition-all duration-300 max-w-[100px] sm:max-w-[120px] h-auto group-hover:brightness-125 group-hover:scale-105"
                   />
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white hover:text-[#fbbf24] transition-colors duration-300">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white hover:text-[#fbbf24] transition-colors duration-300 group-hover:text-[#fbbf24]">
                     {site.name}
                   </h3>
                 </div>
@@ -32,12 +38,11 @@ export default function Top5BettingSites() {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 transition-colors duration-300 ${
-                          i < Math.floor(site.rating) ? "text-[#fbbf24] fill-current" : "text-gray-600"
-                        }`}
+                        className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 transition-colors duration-300 ${i < Math.floor(site.rating) ? "text-[#fbbf24] fill-current" : "text-gray-600"
+                          }`}
                       />
                     ))}
-                    <span className="ml-2 md:ml-3 font-bold text-[#fbbf24] text-sm sm:text-base md:text-lg">
+                    <span className="ml-2 md:ml-3 font-bold text-[#fbbf24] text-sm sm:text-base md:text-lg group-hover:text-white">
                       {site.rating}/5
                     </span>
                   </div>
@@ -48,7 +53,7 @@ export default function Top5BettingSites() {
                 </div>
 
                 <div className="md:col-span-1 text-center md:text-left">
-                  <div className="neon-border bg-gradient-to-r from-[#fbbf24]/20 to-[#dc2626]/20 text-[#fbbf24] px-2 sm:px-3 md:px-4 py-2 md:py-3 rounded-lg font-bold mb-3 md:mb-4 text-sm sm:text-base md:text-lg hover:bg-[#fbbf24]/10 transition-colors duration-300">
+                  <div className="neon-border bg-gradient-to-r from-[#fbbf24]/20 to-[#dc2626]/20 text-[#fbbf24] px-2 sm:px-3 md:px-4 py-2 md:py-3 rounded-lg font-bold mb-3 md:mb-4 text-sm sm:text-base md:text-lg hover:bg-[#fbbf24]/10 transition-colors duration-300 group-hover:bg-[#fbbf24]/20 group-hover:border-[#fbbf24]">
                     {site.bonus}
                   </div>
                   <div className="flex flex-wrap gap-1 md:gap-2 justify-center md:justify-start">
@@ -64,15 +69,15 @@ export default function Top5BettingSites() {
                 </div>
 
                 <div className="md:col-span-1 text-center">
-                  <button className="btn-primary w-full mb-2 md:mb-3 text-sm sm:text-base md:text-lg font-bold py-3 md:py-4">
+                  <div className="btn-primary w-full mb-2 md:mb-3 text-sm sm:text-base md:text-lg font-bold py-3 md:py-4 text-center group-hover:scale-105 transition-all duration-300">
                     Hent Bonus
-                  </button>
+                  </div>
                   <p className="text-xs text-gray-400 hover:text-gray-300 transition-colors duration-300">
                     18+ | Spil ansvarligt
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
