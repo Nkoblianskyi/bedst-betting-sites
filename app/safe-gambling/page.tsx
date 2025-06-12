@@ -43,21 +43,6 @@ export default function SafeGamblingPage() {
               <p className="text-lg text-gray-300 mb-6">
                 Der er altid hjælp at få. Kontakt en af disse organisationer:
               </p>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <a
-                  href="#"
-                  className="bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-                >
-                  StopSpillet.dk
-                </a>
-                <a
-                  href="#"
-                  className="bg-[#1a1a1a] hover:bg-[#333333] text-[#fbbf24] font-semibold py-3 px-6 rounded-lg transition-colors border border-[#fbbf24]"
-                >
-                  Spillemyndigheden
-                </a>
-              </div>
             </div>
           </div>
         </div>
