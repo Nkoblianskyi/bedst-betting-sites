@@ -108,30 +108,6 @@ export default function BettingTips() {
             </ul>
           </div>
         </div>
-
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-[#dc2626]/20 to-[#fbbf24]/20 rounded-xl p-8 border border-[#fbbf24]/30 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">Husk altid ansvarligt spil</h3>
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Betting skal være sjovt og spændende. Hvis du nogensinde føler, at dit spil er ude af kontrol, så søg
-              hjælp med det samme. Der er altid professionel hjælp tilgængelig.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="#"
-                className="bg-[#dc2626] hover:bg-[#b91c1c] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-              >
-                StopSpillet.dk
-              </a>
-              <a
-                href="#"
-                className="bg-[#333333] hover:bg-[#444444] text-[#fbbf24] px-6 py-3 rounded-lg font-semibold transition-colors border border-[#fbbf24]/30"
-              >
-                ROFUS.nu
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
